@@ -11,11 +11,11 @@ function App() {
 
   return (
     <Container fixed>
-    
-    <MediaCard/>
-    <MediaCard/>
-    <MediaCard/>
-    <MediaCard/>
+    <MediaCard  employee= {data}/>
+    <MediaCard  employee= {data}/>
+    <MediaCard  employee= {data}/>
+    <MediaCard  employee= {data}/>
+
 
     </Container>
     
