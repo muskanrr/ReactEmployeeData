@@ -46,12 +46,3 @@ export default function MediaCard({employee}) {
 
 
 
-
-
-<Stack direction="direction row" spacing={2} sx={{marginTop: 2}}>
-        <Chip lebel= "figma"/>
-        <Chip lebel= "Adobe XD"/>
-        <Chip lebel= "sketch"/>
-        </Stack>
-
-        
