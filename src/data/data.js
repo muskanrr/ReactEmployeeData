@@ -1,8 +1,8 @@
 const data = [{
     "id": "E1002",
     "image" : "profile1.png",
-    "firstName": "John",
-    "lastName": "Smith",
+    "firstName": "Sindhu",
+    "lastName": "Sri",
     "email": "john.smith@example.com",
     "department": "UX/UI Design",
     "position": "UI Designer",
@@ -15,22 +15,23 @@ const data = [{
   {
     "id": "E1003",
     "image" : "profile2.png",
-    "firstName" : "Lisa",
-    "lastName": "White",
+    "firstName" : "Saumya ",
+    "lastName": "Christian",
     "email": "lisa.white@example.com",
     "department": "Marketing",
     "position": "Digital Marketing Specialist",
     "employmentType": "Remote",
     "skills": ["SEO", "Content Marketing", "Google Analytics"],
-    "hoursLoggedThisWeek": 35,
-    "onLeave": false
+    "onLeave": false,
+    "hoursLoggedThisWeek" : "35"
+    
   },
   
   {
     "id": "E1004",
     "image" : "profile3.png",
-    "firstName": "Mark",
-    "lastName": "Brown",
+    "firstName": "Muskan",
+    "lastName": "Rathore",
     "email": "mark.brown@example.com",
     "department": "Software Development",
     "position": "Backend Developer",
@@ -43,8 +44,8 @@ const data = [{
   {
     "id": "E1005",
     "image" : "profile4.png",
-    "firstName": "Emily",
-    "lastName": "Green",
+    "firstName": "Ankita",
+    "lastName": "Borawake",
     "email": "emily.green@example.com",
     "department": "Human Resources",
     "position": "HR Manager",
@@ -57,8 +58,8 @@ const data = [{
   {
     "id": "E1006",
     "image" : "profile5.png",
-    "firstName": "Alex",
-    "lastName": "Johnson",
+    "firstName": "Yash",
+    "lastName": "K",
     "email": "alex.johnson@example.com",
     "department": "IT Support",
     "position": "IT Support Specialist",

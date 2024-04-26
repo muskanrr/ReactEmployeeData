@@ -10,39 +10,50 @@ import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-export default function MediaCard({employee}) { 
-  console.log(employee[0]);
+export default function MediaCard({ employee }) {
+  /*console.log(employee); */
   return (
-    <Card sx={{ maxWidth: 345, margin: 10, padding: 2}}>
-      <Box sx={{ textAllign: "center"}}>
-      <CardMedia
-        sx={{ height: 200 , backgroundSize:"contain",  Margin: "1", justifyContext: "Center"}}
-        image={employee[0].image}
-        title="profile"/>
-     </Box>
+  
+    
+    <>
 
-      <CardContent>
-        <ForestIcon/>
-        <Typography gutterBottom variant="h5" component="div">
-          {employee[0].firstName} {employee[0].lastName}
-          
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {employee[0].department } 
-        </Typography>
-        <Typography variant="body2" color="text.secondary"> 
-          {employee[0].position}
-        </Typography>
-      </CardContent>
-      <Stack direction="row" spacing={1}>
-      <Chip label="Active" />
-      <Chip label="Hours = 20" variant="outlined" />
-    </Stack>
-      <CardActions>
-      </CardActions>
-    </Card>
+<Typography variant="h3" component="h2">
+ "Employee Detail"
+</Typography>
+
+      {employee.map((item, index) => (
+        <Card key={index} sx={{ maxWidth: 345, margin: 10, padding: 1 }}>
+          <CardMedia
+            sx={{ height: 200, backgroundSize: "contain", margin: 1 }}
+            image= {`/ReactEmployeeDatagit/${item.image}`}
+            title="profile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {item.firstName} {item.lastName}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {item.department}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {item.position}
+            </Typography>
+          </CardContent>
+
+          <Stack direction="row" spacing={1}>
+            <Chip label="Adobe" />
+            <Chip label="Figma" variant="outlined" />
+            <Chip label="Sketch" variant="outlined" />
+          </Stack>
+
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+      ))}
+    </>
   );
 }
-
 
 
