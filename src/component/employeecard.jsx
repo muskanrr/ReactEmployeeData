@@ -25,7 +25,7 @@ export default function MediaCard({ employee }) {
         <Card key={index} sx={{ maxWidth: 345, margin: 10, padding: 1 }}>
           <CardMedia
             sx={{ height: 200, backgroundSize: "contain", margin: 1 }}
-            image= {`/ReactEmployeeDatagit/${item.image}`}
+            image= {`/ReactEmployeeData/${item.image}`}
             title="profile"
           />
           <CardContent>
